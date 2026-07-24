@@ -9,7 +9,11 @@ const getSum = () => {
     let money = Number(p.textContent);
 		sum+=money;
 	})
-	let 
+	let newRow = document.createElement('tr');
+	let newRowData = document.createElement('td');
+	newRowData.textContent = sum;
+	newRow.appendChild(newRowData);
+	body.appendChild(newRow);
 };
 
 getSumBtn.addEventListener("click", getSum);
