@@ -13,11 +13,10 @@ const getSum = () => {
 	})
 	let newRow = document.createElement('tr');
 	let newRowData = document.createElement('td');
-    newRowData.setAttribute('class','prices');
+    newRow.setAttribute('class','prices');
 	newRowData.textContent = totalPrice;
 	newRow.appendChild(newRowData);
 	table.appendChild(newRow);
-	// prices.textContent = totalPrice;
 };
 
 getSumBtn.addEventListener("click", getSum);
